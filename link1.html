@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archline 스타일 - AI 프로젝트</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .hero {
+      background: linear-gradient(to right, #313c4e, #4c586b);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .content {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background: #313c4e;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SOHN AI 프로젝트</h1>
+    <nav>
+      <a href="#">개요</a>
+      <a href="#">모델</a>
+      <a href="#">시각화</a>
+      <a href="#">문의</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>AI 기반 수요 및 재고 예측</h2>
+    <p>데이터 기반 의사결정을 위한 인공지능 분석 프로젝트</p>
+  </section>
+
+  <section class="content">
+    <h3>핵심 기능</h3>
+    <div class="card-grid">
+      <div class="card">
+        <h4>📊 데이터 분석</h4>
+        <p>다양한 시계열 및 특성 기반 변수 분석 제공</p>
+      </div>
+      <div class="card">
+        <h4>🧠 모델 예측</h4>
+        <p>TFT, LSTM, 앙상블 기반 수요 및 재고 예측</p>
+      </div>
+      <div class="card">
+        <h4>🔍 설명 가능 AI</h4>
+        <p>SHAP, Attention 기반 모델 해석 및 시나리오 분석</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    ⓒ 2025 SOHN AI Project. All rights reserved.
+  </footer>
+</body>
+</html>
